@@ -4,6 +4,7 @@ import { getContactsValue, filterChange } from '../Redux/store';
 
 export const Filter = () => {
   const dispatch = useDispatch();
+
   const { filter } = useSelector(getContactsValue);
 
   const onFilterChange = e => {

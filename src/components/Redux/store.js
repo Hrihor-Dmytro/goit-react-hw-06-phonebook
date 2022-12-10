@@ -31,12 +31,11 @@ const phonebookSlice = createSlice({
     },
   },
 });
+
 export const { addContact, removeContact, filterChange } =
   phonebookSlice.actions;
 
 export const getContactsValue = state => state.phonebook;
-
-console.log(phonebookSlice);
 
 const persistConfig = {
   key: 'root',

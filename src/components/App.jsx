@@ -1,10 +1,11 @@
 import { Form } from './FormComponent/FormComponent';
 import { ContactList } from './ContactsList/ContactsList';
 import { Filter } from './FiltrComponent/FiltrComponent';
+import { BoockTitle } from './App.styled';
 export const App = () => {
   return (
     <div>
-      <h1>Phone book</h1>
+      <BoockTitle>Phone book</BoockTitle>
       <Form />
       <Filter />
       <ContactList />

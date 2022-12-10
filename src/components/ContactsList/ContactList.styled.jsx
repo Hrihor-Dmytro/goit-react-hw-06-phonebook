@@ -1,12 +1,8 @@
 import styled from '@emotion/styled';
 
 export const SectionList = styled.ul`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
   margin: 0;
+  padding: 10px;
 `;
 
 export const SectionLi = styled.li`
@@ -15,17 +11,18 @@ export const SectionLi = styled.li`
   align-items: center;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  /* margin-bottom: 15px; */
 `;
 export const ContactTitle = styled.h2`
-  margin-right: 15px;
   text-align: left;
   margin: 0;
-  width: 160px;
+  min-width: 150px;
 `;
 export const ContactTel = styled.a`
-  width: 150px;
   text-decoration: none;
+  min-width: 150px;
+
   font-weight: bold;
   color: black;
   transition: color 250ms ease-in, border 250ms ease-in, color 250ms ease-in;
@@ -35,12 +32,15 @@ export const ContactTel = styled.a`
   }
 `;
 export const ContactButton = styled.button`
-  width: 150px;
-  height: 30px;
   cursor: pointer;
+  width: 100px;
+  height: 30px;
+
   border: 1px solid red;
   border-radius: 5px;
+
   font-weight: bold;
+
   transition: background-color 250ms ease-in, border 250ms ease-in,
     color 250ms ease-in;
   &:hover,

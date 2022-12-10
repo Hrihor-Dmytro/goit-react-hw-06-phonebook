@@ -7,19 +7,27 @@ export const FormWrapp = styled(Form)`
   text-align: center;
   margin-bottom: 20px;
   font-size: 30px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const FormLabel = styled.label`
-  margin-right: 10px;
+  margin-right: 0;
+  margin-bottom: 10px;
 `;
 
 export const FormInput = styled(Field)`
-  margin-left: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const FormButton = styled.button`
   width: 150px;
   height: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
   border: 1px solid red;
   border-radius: 5px;
