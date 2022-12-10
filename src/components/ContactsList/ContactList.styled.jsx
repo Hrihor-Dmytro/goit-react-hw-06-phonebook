@@ -3,6 +3,8 @@ import styled from '@emotion/styled';
 export const SectionList = styled.ul`
   margin: 0;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const SectionLi = styled.li`
