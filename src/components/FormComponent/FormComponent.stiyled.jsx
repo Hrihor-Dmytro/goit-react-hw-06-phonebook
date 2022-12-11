@@ -54,7 +54,7 @@ export const FormButton = styled.button`
     color 500ms linear;
   &:hover,
   &:focus {
-    background-color: var(--bottom-color);
+    background-color: tomato;
     border: 2px solid var(--text-color);
   }
 `;
