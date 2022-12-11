@@ -12,7 +12,7 @@ export const ButtonTheme = () => {
   };
   return (
     <ButtonBox>
-      <p> {theme} </p>
+      <p> Current theme: {theme} </p>
       <Buttons type="button" onClick={handleLightThemeClick}>
         Light
       </Buttons>
