@@ -7,6 +7,7 @@ import {
   FormInput,
   FormButton,
   FormWrapp,
+  TextBox,
 } from './FormComponent.stiyled';
 
 const initialValues = {
@@ -45,7 +46,7 @@ export const Form = () => {
     <Formik initialValues={initialValues} onSubmit={handleSubmit}>
       <FormWrapp autoComplete="off">
         <FormLabel>
-          Name
+          <TextBox>Name</TextBox>
           <FormInput
             type="text"
             name="name"
@@ -53,7 +54,7 @@ export const Form = () => {
           />
         </FormLabel>
         <FormLabel>
-          Number
+          <TextBox>Number</TextBox>
           <FormInput
             type="tel"
             name="number"

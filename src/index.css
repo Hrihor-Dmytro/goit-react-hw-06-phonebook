@@ -13,19 +13,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* theme style */
-
-:root[data-theme='light'] {
-  --background-color: #ffffff;
-  --text-color: #1c1e21;
-}
-
-:root[data-theme='dark'] {
-  --background-color: #18191a;
-  --text-color: #f5f6f7;
-}
-
 body {
-  background: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: color 500ms linear, background-color 500ms linear;
+}
+/* theme style */
+html[data-theme='dark'] {
+  --text-color: rgb(10, 203, 247);
+  --background-color: #252525;
+  --bottom-color: rgb(59, 141, 149);
+}
+
+html[data-theme='light'] {
+  --text-color: #000000;
+  --background-color: #faf3f3;
+  --bottom-color: rgb(59, 141, 149);
 }

@@ -15,11 +15,25 @@ export const FormLabel = styled.label`
   margin-right: 0;
   margin-bottom: 10px;
 `;
+export const TextBox = styled.p`
+  margin: 10px;
 
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  font-family: 'Gill Sans';
+
+  color: var(--text-color);
+  transition: color 500ms linear;
+`;
 export const FormInput = styled(Field)`
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: color 500ms linear, background-color 500ms linear;
 `;
 
 export const FormButton = styled.button`
@@ -29,13 +43,18 @@ export const FormButton = styled.button`
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
-  border: 1px solid red;
+  border: 1px solid var(--text-color);
   border-radius: 5px;
-  transition: background-color 250ms ease-in, border 250ms ease-in,
-    color 250ms ease-in;
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: color 500ms linear, background-color 500ms linear;
+
+  transition: background-color 500ms linear, border 500ms linear,
+    color 500ms linear;
   &:hover,
   &:focus {
-    background-color: tomato;
-    border: 2px solid black;
+    background-color: var(--bottom-color);
+    border: 2px solid var(--text-color);
   }
 `;
